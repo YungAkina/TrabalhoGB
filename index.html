@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculadora de Áreas</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+<style>
+  .container {
+    margin-top: 20px;
+  }
+  .button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  input[type="number"] {
+    padding: 10px;
+    width: 100%;
+  }
+  p {
+    margin-top: 10px;
+  }
+  .label {
+    text-align: center;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <h1 class="title has-text-centered">Calculadora de Áreas</h1>
+  
+  <h2 class="subtitle has-text-centered"><strong>Losango</strong></h2>
+  <div class="field">
+    <label class="label" for="diagonalMaior">Diagonal Maior:</label>
+    <div class="control">
+      <input class="input" type="number" id="diagonalMaior">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="diagonalMenor">Diagonal Menor:</label>
+    <div class="control">
+      <input class="input" type="number" id="diagonalMenor">
+    </div>
+  </div>
+  <div class="control">
+    <button class="button is-primary is-fullwidth" id="calcularLosango">Calcular</button>
+  </div>
+  <p id="resultadoLosango"></p>
+  
+  <h2 class="subtitle has-text-centered"><strong>Paralelogramo</strong></h2>
+  <div class="field">
+    <label class="label" for="base">Base:</label>
+    <div class="control">
+      <input class="input" type="number" id="base">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="alturaParalelogramo">Altura:</label>
+    <div class="control">
+      <input class="input" type="number" id="alturaParalelogramo">
+    </div>
+  </div>
+  <div class="control">
+    <button class="button is-primary is-fullwidth" id="calcularParalelogramo">Calcular</button>
+  </div>
+  <p id="resultadoParalelogramo"></p>
+  
+  <h2 class="subtitle has-text-centered"><strong>Trapezio</strong></h2>
+  <div class="field">
+    <label class="label" for="baseMenor">Base Menor:</label>
+    <div class="control">
+      <input class="input" type="number" id="baseMenor">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="baseMaior">Base Maior:</label>
+    <div class="control">
+      <input class="input" type="number" id="baseMaior">
+    </div>
+  </div>
+  <div class="field">
+    <label class="label" for="alturaTrapezio">Altura:</label>
+    <div class="control">
+      <input class="input" type="number" id="alturaTrapezio">
+    </div>
+  </div>
+  <div class="control">
+    <button class="button is-primary is-fullwidth" id="calcularTrapezio">Calcular</button>
+  </div>
+  <p id="resultadoTrapezio"></p>
+</div>
+<script src="flamengo.js"></script>
+<a class="button is-primary is-danger" style="float: center;"  href="sobre.html">Próximo</a>
+</body>
+</html>
